@@ -1,0 +1,9 @@
+#Identify user via UPN
+#PS C:\> Enable-ADAccount -Identity "PattiFul"
+
+#Identify Common Name
+#PS C:\> Enable-ADAccount -Identity "CN=Patti Fuller,OU=Finance,OU=UserAccounts,DC=FABRIKAM,DC=COM"
+
+#Edit OU and filter name for all disabled AD accounts
+#Get-ADUser -Filter 'Name -like "*"' -SearchBase "OU=Finance,OU=UserAccounts,DC=FABRIKAM,DC=COM" | Enable-ADAccount
+
